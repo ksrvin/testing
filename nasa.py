@@ -70,11 +70,11 @@ def main():
 
     st.subheader('Parameters')
 
-    loc = st.text_input('McCabe Line Count of Code',value='Integer')
-    vg = st.text_input('McCabe Cyclomatic Complexity',value='Integer')
-    i = st.text_input('Halstead Intelligence',value='Float')
-    v = st.text_input('Halstead Volume',value='Integer')
-    d = st.text_input('Halstead Difficulty',value='Float')
+    loc = st.number_input('McCabe Line Count of Code',value = 0)
+    vg = st.number_input('McCabe Cyclomatic Complexity',value= 0)
+    i = st.number_input('Halstead Intelligence',value=0)
+    v = st.number_input('Halstead Volume',value=0)
+    d = st.number_input('Halstead Difficulty',value=0)
     
     result = ''
 
