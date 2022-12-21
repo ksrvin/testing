@@ -23,8 +23,8 @@ def main():
     st.title('Test Software for Defects')
     
     st.markdown('This web app can classify software as non-defective/ defective')
-    url = 'http://promise.site.uottawa.ca/SERepository/datasets/cm1.arff'
-    st.markdown('Link to dataset (%s)'%url)
+    url = '[More Info](http://promise.site.uottawa.ca/SERepository/datasets/cm1.arff)'
+    st.markdown(url, unsafe_allow_html=True)  
     
     html_description = """ 
     <h3>
