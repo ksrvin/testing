@@ -23,7 +23,8 @@ def main():
     st.title('Test Software for Defects')
     
     st.markdown('This web app can classify software as non-defective/ defective')
-    st.write('Info about the data [Link] (https://github.com/ksrvin/testing/blob/main/about%20JM1%20Dataset.txt)')
+    url = 'https://github.com/ksrvin/testing/blob/main/about%20JM1%20Dataset.txt'
+    st.write('Info about the data [Link] (%s)'%url)
     
     html_description = """ 
     <h3>
