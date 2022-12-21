@@ -22,9 +22,9 @@ def prediction(loc,vg,i, v, d):
 def main():
     st.title('Test Software for Defects')
     
-    st.markdown('This web app can classify software as non-defective/ defective')
-    url = '[More Info](http://promise.site.uottawa.ca/SERepository/datasets/cm1.arff)'
-    st.markdown(url, unsafe_allow_html=True)  
+    st.markdown('This web app can classify software based on Static Code measures proposed by McCabe and Halstead')
+    url = 'http://promise.site.uottawa.ca/SERepository/datasets/cm1.arff'
+    st.markdown('For more info on dataset: (%s)'%url)
     
     html_description = """ 
     <h3>
@@ -87,8 +87,8 @@ def main():
         if(result[0]==0):
             text = 'no defects'
         else:
-            text = 'defects'
-        st.success('The software has {}'.format(text))
+            text = 'some defects'
+        st.success('The ML model predicts {}'.format(text))
 
 if __name__=='__main__':
     main()
