@@ -6,7 +6,7 @@ import sklearn
 import xgboost
 from PIL import Image
 
-model = joblib.load(nasa.pkl)
+model = joblib.load('nasa.pkl')
 
 
 def welcome():
@@ -64,7 +64,7 @@ def main():
     st.sidebar.markdown('')
     st.sidebar.markdown('Confusion Matrix')
     
-    image = Image.open(output.png)
+    image = Image.open('output.png')
 
     st.sidebar.image(image, caption='Confusion Matrix')
 
